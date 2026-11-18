@@ -1,0 +1,25 @@
+\begin{table*}[!t]
+\caption{Per-unit rank of every method and gap difference of CPR-PPO against TS in percentage points; negative values favour CPR-PPO.}
+\label{tab:S-ranks}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{6pt}
+\begin{tabular}{@{}llccccccccr@{}}
+\toprule
+Regime & Size & RS & SEET & MWKR & GA-LS & TS & MRGRL & IDDQN & CPR-PPO & $\Delta$ vs TS\\
+\midrule
+D1 & $10\times5$ & 7.0 & 5.0 & 4.0 & 3.0 & \textbf{1.0} & 8.0 & \cellcolor{bestblue}6.0 & 2.0 & +0.80\\
+D1 & $20\times5$ & 8.0 & 5.0 & 4.0 & 3.0 & 2.0 & 6.0 & \cellcolor{bestblue}7.0 & 1.0 & -2.02\\
+D1 & $15\times10$ & 7.0 & 5.0 & 3.0 & 4.0 & 2.0 & 6.0 & \cellcolor{bestblue}8.0 & 1.0 & -7.46\\
+D1 & $20\times10$ & 8.0 & 4.0 & 5.0 & 3.0 & 2.0 & 6.0 & \cellcolor{bestblue}7.0 & 1.0 & -6.03\\
+D1 & $30\times10$ & 8.0 & 5.0 & 3.0 & 4.0 & 2.0 & 6.0 & \cellcolor{bestblue}7.0 & 1.0 & -4.81\\
+D2 & $10\times5$ & 8.0 & 3.0 & 5.0 & 2.0 & \textbf{1.0} & 6.0 & \cellcolor{bestblue}7.0 & 4.0 & +5.20\\
+D2 & $20\times5$ & 8.0 & 4.0 & 5.0 & \textbf{1.0} & 3.0 & 6.0 & \cellcolor{bestblue}7.0 & 2.0 & -1.80\\
+D2 & $15\times10$ & 8.0 & 4.0 & 3.0 & 5.0 & 2.0 & 6.0 & \cellcolor{bestblue}7.0 & 1.0 & -1.49\\
+D2 & $20\times10$ & 8.0 & 5.0 & 3.0 & 4.0 & \textbf{1.0} & 6.0 & \cellcolor{bestblue}7.0 & 2.0 & +1.64\\
+D2 & $30\times10$ & 8.0 & 4.0 & 5.0 & 2.0 & \textbf{1.0} & 7.0 & \cellcolor{bestblue}6.0 & 3.0 & +3.42\\
+\midrule
+Mean & -- & 7.80 & 4.40 & 4.00 & 3.10 & 1.70 & 6.30 & 6.90 & 1.80 & -1.25\\
+\bottomrule
+\end{tabular}
+\end{table*}

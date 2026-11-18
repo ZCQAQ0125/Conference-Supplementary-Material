@@ -1,0 +1,36 @@
+\begin{table*}[!t]
+\caption{Mean realized makespan (upper block) and empirical gap in percent (lower block) over the ten evaluation units. Best values in each unit are bold, second-best values are underlined, and the CPR-PPO row is shaded.}
+\label{tab:S-results}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{@{}lcccccccccc@{}}
+\toprule
+\multicolumn{1}{@{}l}{} & \multicolumn{5}{c}{D1 ($q=0.10$, repairs in $[5,50]$)} & \multicolumn{5}{c}{D2 ($q=0.30$, repairs in $[50,99]$)}\\
+\cmidrule(lr){2-6}\cmidrule(lr){7-11}
+Method & 10x5 & 20x5 & 15x10 & 20x10 & 30x10 & 10x5 & 20x5 & 15x10 & 20x10 & 30x10\\
+\midrule
+\multicolumn{11}{@{}l}{\emph{(a) mean realized makespan}}\\
+RS & 221.65 & 387.84 & 320.07 & 410.56 & 626.23 & 767.10 & 1389.97 & 1186.78 & 1556.61 & 2341.10\\
+SEET & 181.75 & 292.61 & 221.89 & 266.20 & 379.72 & 526.13 & 872.74 & 761.15 & 953.90 & 1235.48\\
+MWKR & 181.56 & 290.29 & 215.33 & 270.18 & 368.70 & 561.35 & 916.31 & 735.93 & 922.34 & 1282.28\\
+GA-LS & 174.93 & 281.54 & 217.07 & 263.44 & 375.23 & \underline{525.40} & \textbf{823.26} & 763.48 & 932.86 & \underline{1216.21}\\
+TS & \textbf{164.95} & \underline{264.89} & \underline{212.00} & \underline{255.21} & \underline{358.73} & \textbf{509.81} & 854.50 & \underline{730.95} & \textbf{899.02} & \textbf{1182.21}\\
+MRGRL$^{\dagger}$ & 231.01 & 309.57 & 313.67 & 339.42 & 460.47 & 620.74 & 937.40 & 1020.80 & 1275.45 & 1785.99\\
+IDDQN$^{\dagger}$ & 215.44 & 385.24 & 342.43 & 410.10 & 591.01 & 643.03 & 1016.81 & 1036.72 & 1291.09 & 1649.33\\
+\rowcolor{bestblue}CPR-PPO & \underline{166.75} & \textbf{260.12} & \textbf{197.71} & \textbf{241.45} & \textbf{342.90} & 535.95 & \underline{841.53} & \textbf{719.73} & \underline{915.42} & 1221.24\\
+\midrule
+\multicolumn{11}{@{}l}{\emph{(b) empirical gap (\%)}}\\
+RS & 37.57 & 52.11 & 63.12 & 71.92 & 84.18 & 59.79 & 76.87 & 78.02 & 82.30 & 102.80\\
+SEET & 12.89 & 14.58 & 12.57 & 11.74 & 11.79 & \underline{9.15} & 11.04 & 13.69 & 11.55 & 6.66\\
+MWKR & 13.38 & 13.48 & 9.36 & 13.34 & 8.53 & 15.52 & 16.72 & 10.27 & 7.58 & 10.82\\
+GA-LS & 8.95 & 10.19 & 10.12 & 10.58 & 10.42 & 9.37 & \textbf{4.76} & 13.92 & 8.99 & \underline{5.12}\\
+TS & \textbf{2.89} & \underline{3.68} & \underline{7.89} & \underline{7.12} & \underline{5.80} & \textbf{6.07} & 9.28 & \underline{9.05} & \textbf{5.10} & \textbf{2.06}\\
+MRGRL$^{\dagger}$ & 44.68 & 21.47 & 60.55 & 42.63 & 36.10 & 29.21 & 19.89 & 52.48 & 49.30 & 54.81\\
+IDDQN$^{\dagger}$ & 34.53 & 51.58 & 75.12 & 72.08 & 74.66 & 33.73 & 29.96 & 55.25 & 51.20 & 43.00\\
+\rowcolor{bestblue}CPR-PPO & \underline{3.69} & \textbf{1.66} & \textbf{0.43} & \textbf{1.09} & \textbf{0.99} & 11.27 & \underline{7.48} & \textbf{7.56} & \underline{6.74} & 5.48\\
+\midrule
+\multicolumn{11}{@{}l}{Mean gap: RS 70.87, SEET 11.56, MWKR 11.90, GA-LS 9.24, TS 5.89, MRGRL 41.11, IDDQN 52.11, CPR-PPO 4.64}\\
+\bottomrule
+\end{tabular}
+\end{table*}
